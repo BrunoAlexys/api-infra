@@ -1,5 +1,5 @@
 resource "aws_ecr_repository" "api_repo" {
-  name = "repo-api-aula"
+  name = "projeto-exemplo-repo"
 }
 
 resource "aws_lambda_function" "api_data" {
