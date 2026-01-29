@@ -26,6 +26,7 @@ jobs:
         working-directory: ./app/terraform
         run: |
           terraform init
+          aws ecr describe-repositories --repository-names projeto-exemplo-repo || \
           terraform apply -target=aws_ecr_repository.api_repo -auto-approve
 
       - name: Amazon ECR Login Action
