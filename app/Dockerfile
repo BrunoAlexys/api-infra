@@ -5,4 +5,4 @@ RUN npm install --production
 
 COPY index.js ${LAMBDA_TASK_ROOT}
 
-CMD [ "index.js.handler" ]
+CMD [ "index.handler" ]
